@@ -1,0 +1,13 @@
+h1{
+    color: red;
+    text-align: center;
+}
+
+footer{
+    border-style:solid;
+    border-color: darkblue;
+}
+
+img{
+    width:80%;
+}
