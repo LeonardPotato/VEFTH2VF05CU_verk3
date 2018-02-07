@@ -1,3 +1,4 @@
+import os
 from bottle import route, run, template, static_file, error
 
 
@@ -60,4 +61,4 @@ def server_static(filename):
 def error404(error):
     return 'Villa 404, Ekkert fannst.'
 
-run()
+run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
